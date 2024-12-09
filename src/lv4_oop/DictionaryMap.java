@@ -15,6 +15,7 @@ public class DictionaryMap {
         deToEnDict.put("hunde", "dawgs");
         deToEnDict.put("löwe", "lion");
 
+
         //Zugriff (Carsten Stahl) -> über Schlüssel
         String hundInEn = deToEnDict.get("hund");
         System.out.println("hundInEn = " + hundInEn);
