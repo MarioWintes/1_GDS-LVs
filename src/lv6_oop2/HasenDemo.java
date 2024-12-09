@@ -30,7 +30,7 @@ public class HasenDemo {
         hasenstall.add(easerhaze);
         hasenstall.add(rabbit);
 
-        System.out.println("------list------");
+        System.out.println("-------list-------");
         for (Hase h : hasenstall){
             h.verteilen();
         }
