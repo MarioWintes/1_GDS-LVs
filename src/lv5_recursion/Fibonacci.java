@@ -3,7 +3,7 @@ package lv5_recursion;
 public class Fibonacci {
     public static void main(String[] args) {
 
-        System.out.println(calculateFibonacci(11));
+        System.out.println(calculateFibonacci(18));
     }
 
     /**
@@ -11,6 +11,7 @@ public class Fibonacci {
      * @param n
      * @return
      */
+
     public static int calculateFibonacci(int n){
          if (n <= 1 || n == 2){
             return 1;
