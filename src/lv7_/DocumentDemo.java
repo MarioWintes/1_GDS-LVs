@@ -6,14 +6,36 @@ public class DocumentDemo {
 
     public static void main(String[] args) {
 
-        Document document = new Document("Hello_World");
+        TextDocument textDocument = new TextDocument("Hello_Text.txt", "Lorem ipsum dolor sit amet");
 
-        TextDocument textDocument = new TextDocument("Hello_Text", "inhalt");
+        ImageDocument imageDocument = new ImageDocument("Hello_Image.png", 60, 200, "red");
 
-        ImageDocument imageDocument = new ImageDocument("Hello_Image", 60, 200, "red");
+        CsvDocument csvDocument = new CsvDocument("Hello_Csv.csv", new ArrayList<>());
 
-        CsvDocument csvDocument = new CsvDocument("Hello_Csv", new ArrayList<>(50));
+        csvDocument.addLine("Spalte1;S2;S3");
+        csvDocument.addLine("SpalteC;SB;SA");
 
-        textDocument.printDocument();
+        PrintManager pm = new PrintManager();
+        pm.addDocument(textDocument);
+        pm.addDocument(imageDocument);
+        pm.addDocument(csvDocument);
+
+        pm.printAll();
+
+        Document wd = new WordDocument("hallo.docx", "word sinnlos");
+
+        pm.addDocument(wd);
+        pm.printAll();
+
+        Document d = new Document("name") {
+            @Override
+            public void printDocument() {
+                System.out.println("mega geil");
+            }
+        };
+
+        d.printDocument();
+
+
     }
 }

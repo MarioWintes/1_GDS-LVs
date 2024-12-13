@@ -1,6 +1,6 @@
 package lv7_;
 
-public class Document {
+public abstract class Document {
 
     protected String fileName;
 
@@ -8,7 +8,5 @@ public class Document {
         this.fileName = fileName;
     }
 
-    public void printDocument() {
-        System.out.print(fileName);
-    }
+    public abstract void printDocument();
 }

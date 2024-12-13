@@ -15,10 +15,9 @@ public class ImageDocument extends Document {
 
     @Override
     public void printDocument() {
-        super.printDocument();
+        System.out.println("fileName = " + fileName);
         System.out.println("sizeX = " + sizeX);
         System.out.println("sizeY = " + sizeY);
         System.out.println("color = " + color);
-        System.out.println("fileName = " + fileName);
     }
 }
