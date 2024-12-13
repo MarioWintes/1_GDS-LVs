@@ -1,4 +1,4 @@
-package lv7_;
+package lv7_abstract_interfaces;
 
 public abstract class Document {
 

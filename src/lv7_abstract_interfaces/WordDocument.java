@@ -1,10 +1,10 @@
-package lv7_;
+package lv7_abstract_interfaces;
 
-public class TextDocument extends Document {
+public class WordDocument extends Document {
 
     private String content;
 
-    public TextDocument(String fileName, String content) {
+    public WordDocument(String fileName, String content) {
         super(fileName);
         this.content = content;
     }
