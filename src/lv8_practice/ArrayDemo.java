@@ -25,6 +25,15 @@ public class ArrayDemo {
         int sum = ArrayHelper.calcSum(array);
         System.out.println(sum);
 
+        System.out.println(calcSum(array));
 
+    }
+
+    public static int calcSum(int[] numbers){
+        int sum = 0;
+        for (int value : numbers){
+            sum += value;
+        }
+        return sum;
     }
 }
